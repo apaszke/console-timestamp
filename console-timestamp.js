@@ -5,7 +5,7 @@ var fixDigits = function (input, length) {
 	return input;
 }
 
-exports.timestamp = function (format) {
+module.exports = function (format) {
 	var date = new Date();
 	var out = format || "hh:mm:ss";
 	out = out.replace("hh", fixDigits(date.getHours(), 2), "g");
