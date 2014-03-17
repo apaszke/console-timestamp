@@ -24,5 +24,5 @@ var timestamp = require('console-timestamp');
 
 console.log(timestamp()); //15:43:20
 console.log(timestamp('DD-MM-YYYY hh:mm:ss:iii')); //04-07-2014 14:32:45:891
-console.log(timestamp('[SERVER TIME hh:mm] message: ')); //[SERVER TIME 14:23] message: 
+console.log(timestamp('[SERVER TIME hh:mm]')); //[SERVER TIME 14:23]
 ```
