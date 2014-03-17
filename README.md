@@ -5,7 +5,7 @@ It's a simple date formatter for Node.js. Perfect for logging.
 
 There's one function: ```timestamp()```
 
-You can call it with a string argument which becomes the format. It replaces specific parts of this string:
+You can call it with a string argument which becomes the format (defaults to ```hh:mm:ss```). It replaces specific parts of this string:
 
 * ```YYYY``` with  4-digit Year
 * ```YY``` with 2-digit Year
