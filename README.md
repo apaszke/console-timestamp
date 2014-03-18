@@ -4,9 +4,10 @@ console-timestamp
 It's a simple date formatter for Node.js. Perfect for logging.
 
 There's only one function.
+
 ```timestamp([format, time])```
 
-You can call it with a string argument which becomes the format (defaults to ```hh:mm:ss```). The second argument can be a number or a Date object, but it is optional. It replaces specific parts of this string:
+Both arguments are optional. You can call it with a string which becomes the format (defaults to ```hh:mm:ss```), while the second argument can be a number or a Date object to print. It replaces specific parts of format string:
 
 * ```YYYY``` with  4-digit Year
 * ```YY``` with 2-digit Year
