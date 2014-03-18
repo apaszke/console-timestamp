@@ -29,10 +29,10 @@ var fixDigits = function (input, length) {
 		input = "0" + input;
 	}
 	return input;
-}
+};
 
-module.exports = function (format) {
-	var date = new Date();
+module.exports = function (format, time) {
+    var date = (time && typeof time == "number" && new Date(time)) || (time && typeof time.getTime == "function" && time) || new Date();
 	var out = format || "hh:mm:ss";
 	out = out.replace("hh", fixDigits(date.getHours(), 2), "g");
 	out = out.replace("mm", fixDigits(date.getMinutes(), 2), "g");
@@ -43,4 +43,4 @@ module.exports = function (format) {
 	out = out.replace("MM", fixDigits(date.getMonth(), 2), "g");
 	out = out.replace("DD", fixDigits(date.getDate(), 2), "g");
 	return out;
-}
+};
