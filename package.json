@@ -1,6 +1,6 @@
 {
   "name": "console-timestamp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple date formatter for logging purposes",
   "main": "console-timestamp.js",
   "scripts": {
