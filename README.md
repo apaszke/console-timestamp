@@ -26,3 +26,5 @@ console.log(timestamp()); //15:43:20
 console.log(timestamp('DD-MM-YYYY hh:mm:ss:iii')); //04-07-2014 14:32:45:891
 console.log(timestamp('[SERVER TIME hh:mm]')); //[SERVER TIME 14:23]
 ```
+
+Licensed under MIT license. Copyright (c) 2014 Adam Paszke
