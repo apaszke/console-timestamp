@@ -7,7 +7,7 @@ There's only one function.
 
 ```timestamp([format, time])```
 
-Both arguments are optional. You can call it with a string which becomes the format (defaults to ```hh:mm:ss```), while the second argument can be a number or a Date object to print. It replaces specific parts of format string:
+Both arguments are optional. You can call it with a string which becomes the format (defaults to ```hh:mm:ss```), while the second argument can be a number or a Date object to print (becomes current time by default). It replaces specific parts of format string:
 
 * ```YYYY``` with  4-digit Year
 * ```YY``` with 2-digit Year
