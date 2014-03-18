@@ -23,9 +23,14 @@ Examples
 ```javascript
 var timestamp = require('console-timestamp');
 
+var now = new Date();
+var number = 478921;
+
 console.log(timestamp()); //15:43:20
 console.log(timestamp('DD-MM-YYYY hh:mm:ss:iii')); //04-07-2014 14:32:45:891
 console.log(timestamp('[SERVER TIME hh:mm]')); //[SERVER TIME 14:23]
+console.log(timestamp(null, number)); //01:07:58
+console.log(timestamp('MM-DD hh:mm', now)) //11-27 12:43
 ```
 
 Licensed under MIT license. Copyright (c) 2014 Adam Paszke
