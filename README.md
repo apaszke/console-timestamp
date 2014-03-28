@@ -5,7 +5,7 @@ It's a simple date formatter for Node.js. Perfect for logging.
 
 There'ss one more function and one more String property included.
 
-**Basic usage**
+**Timestamp function**
 
 ```timestamp([format, time]);```
 
@@ -22,7 +22,7 @@ Both arguments are optional. You can call it with a string which becomes the for
 
 **String getter**
 
-Now, you can use a new String getter ```'hh:mm:ss'.timestamp``` which will replace the placeholders in the string. You can't specify a time then, the values are automatically set to now. It's just a shortcut.
+Now, you can use a new String getter ```'hh:mm:ss'.timestamp``` which will replace the placeholders in the string. You can't specify a time then. The values are automatically set to now. It's just a shortcut for the regular function.
 
 Examples
 =================
