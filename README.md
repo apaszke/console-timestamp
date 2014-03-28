@@ -3,7 +3,9 @@ console-timestamp
 
 It's a simple date formatter for Node.js. Perfect for logging.
 
-There's only one function.
+There'ss one more function and one more String property included.
+
+**Basic usage**
 
 ```timestamp([format, time]);```
 
@@ -18,6 +20,10 @@ Both arguments are optional. You can call it with a string which becomes the for
 * ```ss``` with Seconds
 * ```iii``` with Miliseconds
 
+**String getter**
+
+Now, you can use it like ```'hh:mm:ss'.timestamp``` which will replace the placeholders in the string. You can't specify a time then, the values are automatically set to now. It's just a shortcut.
+
 Examples
 =================
 
@@ -27,6 +33,8 @@ var timestamp = require('console-timestamp');
 var now = new Date();
 var number = 478921;
 
+console.log('hh:mm:ss'.timestamp); //13:58:29
+console.log('DD-MM-YY hh:mm'.timestamp); //28-03-14 14:43
 console.log(timestamp()); //15:43:20
 console.log(timestamp('DD-MM-YYYY hh:mm:ss:iii')); //04-07-2014 14:32:45:891
 console.log(timestamp('[SERVER TIME hh:mm]')); //[SERVER TIME 14:23]

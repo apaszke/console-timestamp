@@ -40,7 +40,15 @@ module.exports = function (format, time) {
 	out = out.replace("iii", fixDigits(date.getMilliseconds(), 3), "g");
 	out = out.replace("YYYY", fixDigits(date.getFullYear(), 4), "g");
 	out = out.replace("YY", date.getFullYear().toString().slice(-2), "g");
-	out = out.replace("MM", fixDigits(date.getMonth(), 2), "g");
+	out = out.replace("MM", fixDigits(date.getMonth()+1, 2), "g");
 	out = out.replace("DD", fixDigits(date.getDate(), 2), "g");
 	return out;
 };
+
+
+
+Object.defineProperty(String.prototype, 'timestamp', {
+    get: function () {
+        return module.exports(this);
+    }
+});
