@@ -22,7 +22,7 @@ Both arguments are optional. You can call it with a string which becomes the for
 
 **String getter**
 
-Now, you can use it like ```'hh:mm:ss'.timestamp``` which will replace the placeholders in the string. You can't specify a time then, the values are automatically set to now. It's just a shortcut.
+Now, you can use a new String getter ```'hh:mm:ss'.timestamp``` which will replace the placeholders in the string. You can't specify a time then, the values are automatically set to now. It's just a shortcut.
 
 Examples
 =================
