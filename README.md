@@ -3,7 +3,7 @@ console-timestamp
 
 It's a simple date formatter for Node.js. Perfect for logging.
 
-There'ss one more function and one more String property included.
+There's one function and one String property included.
 
 **Timestamp function**
 
